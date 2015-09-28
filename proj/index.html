@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <link rel="stylesheet" href="apps/assets/css/base.css" />
+
+    <script src="build/react.js"></script>
+    <script src="build/JSXTransformer.js"></script>
+    <script src="libs/marked.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="react-root"></div>
+    <div id="react-flash-bar"></div>
+    <div id="react-list"></div>
+
+    <h3>What people say about it</h3>
+    <div id="comment-container"></div>
+
+    <!-- Must be loaded first before jsx definition -->
+    <script type="text/jsx" src="apps/boot.js"></script>
+
+    <!-- JSX definition for components -->
+    <script type="text/jsx" src="apps/components/list.js"></script>
+    <script type="text/jsx" src="apps/components/comment-box.js"></script>
+    <script type="text/jsx" src="apps/components/alert.js"></script>
+
+    
+
+  </body>
+</html>
